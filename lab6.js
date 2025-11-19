@@ -68,7 +68,9 @@ app.get('/RegisterForm.html', (req,res)=>{
 app.get('/SearchForm.html', (req,res)=>{
     res.sendFile(path.join(__dirname,'SearchForm.html'));
 });
-
+app.get('/docs',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'index.html'));
+})
 app.post('/register', upload.single('photo'), (req,res)=>{
     const {inventory_name,description}=req.body;
     if (!inventory_name) {
