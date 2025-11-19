@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "c97c1d6f-8149-44a1-bdbb-1e40935197a7",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50143000",
+		"_collection_link": "https://artekk12-7883669.postman.co/workspace/Dubyk-Oleksandr's-Workspace~3a23cbbf-e776-45d7-8c3c-9cff5232d336/collection/50143000-c97c1d6f-8149-44a1-bdbb-1e40935197a7?action=share&source=collection_link&creator=50143000"
+	},
+	"item": [
+		{
+			"name": "/inventory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1763570746663",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inventory_name",
+							"value": "Телеіон IPHONE 12",
+							"description": "Круто, класно",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1763570746663",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/<ID>",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1763570746663",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventory/1763571632730",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"1763571632730"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/<ID> оновлення",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Телеіон I\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventory/1763571632730",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"1763571632730"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "telephone",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/<ID>/photo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventory/1763572098345/photo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"1763572098345",
+						"photo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/<ID>/photo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "ezI61kZfd/Знімок екрана 2025-11-07 213902.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventory/1763572098345/photo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"1763572098345",
+						"photo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/<ID>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "ezI61kZfd/Знімок екрана 2025-11-07 213902.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventory/1763572098345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"1763572098345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/RegisterForm.html",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "ezI61kZfd/Знімок екрана 2025-11-07 213902.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/RegisterForm.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RegisterForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/SearchForm.html",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "ezI61kZfd/Знімок екрана 2025-11-07 213902.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/SearchForm.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SearchForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "ezI61kZfd/Знімок екрана 2025-11-07 213902.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/search?id=1763572098345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1763572098345"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
